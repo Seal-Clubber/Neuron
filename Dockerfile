@@ -50,7 +50,7 @@ COPY --from=gitclone /Satori /Satori
 
 ## Install everything
 ENV HF_HOME=/Satori/Neuron/models/huggingface
-ARG GPU_FLAG=off
+ARG GPU_FLAG=on
 ENV GPU_FLAG=${GPU_FLAG}
 # for torch: cpu cu118 cu121 cu124 --index-url https://download.pytorch.org/whl/cpu
 ENV PIP_DEFAULT_TIMEOUT=100
