@@ -27,7 +27,7 @@ RUN apt-get update && \
     #chmod -R 777 /Satori/Neuron && \
 ## File system setup
 ARG GITHUB_USERNAME
-ARG GITHUB_TOKEN
+#ARG GITHUB_TOKEN
 ARG BRANCH_FLAG=main
 RUN mkdir /Satori && \
     cd /Satori && \
