@@ -32,8 +32,8 @@ ARG BRANCH_FLAG=main
 RUN mkdir /Satori && \
     cd /Satori && \
     git clone -b ${BRANCH_FLAG} https://github.com/SatoriNetwork/Lib.git && \
-    git clone -b ${BRANCH_FLAG} https://github.com/SatoriNetwork/Engine.git && \
-    git clone -b ${BRANCH_FLAG} https://github.com/SatoriNetwork/Neuron.git && \
+    git clone -b ${BRANCH_FLAG} https://github.com/Seal-Clubber/Engine.git && \
+    git clone -b ${BRANCH_FLAG} https://github.com/Seal-Clubber/Neuron.git && \
     rm -rf /root/.gitconfig /root/.ssh /root/.netrc && \
     mkdir -p /Satori/Neuron/models/huggingface && \
     chmod +x /Satori/Neuron/satorineuron/web/start.sh && \
